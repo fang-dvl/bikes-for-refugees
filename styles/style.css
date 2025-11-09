@@ -170,7 +170,6 @@ p {
   font-weight: 600;
   text-transform: uppercase;
 }
-
 .heading-underline:before {
   content: "";
   position: absolute;
@@ -182,11 +181,24 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
-
+.article-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+  gap: 1rem;
+}
 .article {
   margin-bottom: 1rem;
+  border:#b8c1c5 1px solid;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+#springfundraiser, #dropoffevent, #helpus {
+  display: grid;
+  grid-template-columns: 5rem 1fr; 
+  gap: 1rem;
+  align-items: center;       
 }
 
 .article__title {
@@ -211,7 +223,7 @@ p {
 }
 
 .article__read-more {
-  margin-top: 0;
+  margin-top: 0px;
 }
 
 .article__read-more a {
@@ -231,8 +243,14 @@ p {
   color: var(--orange-dark);
 }
 
+#learnmore {
+  margin-top: 4rem;
+}
+
 .facebook-link {
   color: var(--orange-dark);
+  display: block;    /* 让文字块级显示 */
+  text-align: right;
 }
 
 /* Sidebar */
