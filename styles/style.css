@@ -76,10 +76,15 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  margin-left: 20px;
 }
 
-
+#donatenow {
+  background-color:#c05326;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;  
+}
 /* Text styles */
 
 .text-highlight {
@@ -93,26 +98,6 @@ p {
   width: 0;
   border: 6px solid var(--white);
   border-left-color: var(--orange-dark);
-}
-
-
-#donatenow, #donatebike{
-  background-color:#c45b2d;
-  color: white;
-  padding: 5px 10px;
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: none;  
-}
-#volunteer {  
-  background-color:white;
-  color: #c45b2d;
-  padding: 5px 10px;
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: none; 
 }
 
 .content {
@@ -135,21 +120,45 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image: url("../images/header-bike.jpg");
+  background-size: cover; /* 宽度自动铺满，高度按比例变化 */
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  margin-left: 30px;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  margin-left: 30px;
 }
 
-
+#donatenow, #donatebike{
+  background-color:#c05326;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;  
+  margin-left: 30px;
+}
+#volunteer {  
+  background-color:white;
+  color: #c05326;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none; 
+}
 /* Headings */
 
 .heading-underline {
