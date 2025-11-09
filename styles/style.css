@@ -63,10 +63,12 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  margin-left: 20px;
 }
 
 .navigation__item {
   padding: 0.5rem 0;
+  margin-left: 20px;
 }
 
 .navigation__link {
@@ -74,6 +76,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  margin-left: 20px;
 }
 
 
@@ -93,12 +96,24 @@ p {
 }
 
 
-/* Buttons */
-
-  /* INSERT BUTTON STYLES HERE */
-
-
-/* Content */
+#donatenow, #donatebike{
+  background-color:#c45b2d;
+  color: white;
+  padding: 5px 10px;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;  
+}
+#volunteer {  
+  background-color:white;
+  color: #c45b2d;
+  padding: 5px 10px;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none; 
+}
 
 .content {
   display: flex;
