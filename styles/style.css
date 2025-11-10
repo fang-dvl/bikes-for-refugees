@@ -59,16 +59,18 @@ p {
 }
 
 /* Navigation */
+nav a:hover {
+  color: #c05326; /* changes to orange on hover */
+}
 
 .navigation__list {
   display: flex;
   list-style: none;
-  margin-left: 20px;
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
-  margin-left: 20px;
+ padding: 0.5rem 0;
+ padding: 0 0.5rem;
 }
 
 .navigation__link {
@@ -76,15 +78,21 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0 0.5rem;
 }
 
 #donatenow {
   background-color:#c05326;
-  color: white;
+  color:white;
   padding: 5px 10px;
   border-radius: 5px;
   border: none;  
 }
+#donatenow:hover {
+  background-color: white;  /* inverted background */
+  color: #c05326;            /* inverted text color */
+}
+
 /* Text styles */
 
 .text-highlight {
@@ -144,7 +152,7 @@ p {
   margin-left: 30px;
 }
 
-#donatenow, #donatebike{
+#donatebike{
   background-color:#c05326;
   color: white;
   padding: 5px 10px;
@@ -152,12 +160,23 @@ p {
   border: none;  
   margin-left: 30px;
 }
+
+#donatebike:hover {
+  background-color: white;  /* inverted background */
+  color: #c05326;            /* inverted text color */
+}
+
 #volunteer {  
   background-color:white;
   color: #c05326;
   padding: 5px 10px;
   border-radius: 5px;
   border: none; 
+}
+
+#volunteer:hover {
+  background-color: #c05326;  /* inverted background */
+  color: white;            /* inverted text color */
 }
 /* Headings */
 
